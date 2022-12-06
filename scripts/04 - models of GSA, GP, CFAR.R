@@ -3,7 +3,7 @@
 
 	# read in activity data and estimate CFAR
 
-	CFAR_dat <- read.csv(here("./data/activity/Mahan_CFAR_datasheet.csv"),
+	CFAR_dat <- read.csv(here("./data/Mahan_CFAR_datasheet.csv"),
 	                           header = TRUE, stringsAsFactors = FALSE,
 	                           strip.white = TRUE)  %>%
 	                           dplyr::select(-X.1, -X, - X.2, -X.3, -X.4, -X.5)
@@ -79,7 +79,7 @@
 							GP = unique(RawGSA8_CFAR$mean_gperf_simple))
 	
 	GP_CFAR_int_std <- stan(
-	                file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/MLM_CFAR_INT.stan"),
+	                file = here("./stan models/MLM_CFAR_INT.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 2000,
@@ -136,7 +136,7 @@
 							GP = unique(RawGSA8_CFAR$mean_gperf_simple))
 	
 	GP_CFAR_slope_std <- stan(
-	                file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/MLM_CFAR_slope.stan"),
+	                file = here("./stan models/MLM_CFAR_slope.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 2000,
@@ -223,7 +223,7 @@
 							GP = unique(RawGSA8_CFAR$mean_gperf_simple))
 	
 	GP_CFAR_int_std_phylo <- stan(
-	                file = here("./analyses/manuscript code/stan models_NOV192020/phylo/MLM_CFAR_INT_PHYLO.stan"),
+	                file = here("./stan models/MLM_CFAR_INT_PHYLO.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 2000,
@@ -276,7 +276,7 @@
 							GP = unique(RawGSA8_CFAR$mean_gperf_simple))
 	
 	GP_CFAR_slope_std_phylo <- stan(
-	                file = here("./analyses/manuscript code/stan models_NOV192020/phylo/MLM_CFAR_SLOPE_PHYLO.stan"),
+	                file = here("./stan models/MLM_CFAR_SLOPE_PHYLO.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 2000,
@@ -333,7 +333,7 @@
 							GP = unique(RawGSA8_CFAR$mean_gperf_simple))
 	
 	GP_CFAR_int_std_ex <- stan(
-	                file = ("./analyses/manuscript code/stan models_NOV192020/non phylo/MLM_CFAR_INT.stan"),
+	                file = ("./stan models/MLM_CFAR_INT.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 2000,
@@ -384,7 +384,7 @@
 							GP = unique(RawGSA8_CFAR$mean_gperf_simple))
 	
 	GP_CFAR_slope_std_ex <- stan(
-	                file = ("./analyses/manuscript code/stan models_NOV192020/non phylo/MLM_CFAR_slope.stan"),
+	                file = ("./stan models/MLM_CFAR_slope.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 2000,
@@ -440,7 +440,7 @@
 							GP = unique(RawGSA8_CFAR_no_abr$mean_gperf_simple))
 	
 	GP_CFAR_int_std_no_abr <- stan(
-	                file = ("./analyses/manuscript code/stan models_NOV192020/non phylo/MLM_CFAR_INT.stan"),
+	                file = ("./stan models/MLM_CFAR_INT.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 2000,
@@ -489,7 +489,7 @@
 							GP = unique(RawGSA8_CFAR_no_abr$mean_gperf_simple))
 	
 	GP_CFAR_slope_std_no_abr <- stan(
-	                file = ("./analyses/manuscript code/stan models_NOV192020/non phylo/MLM_CFAR_slope.stan"),
+	                file = ("./stan models/MLM_CFAR_slope.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 2000,

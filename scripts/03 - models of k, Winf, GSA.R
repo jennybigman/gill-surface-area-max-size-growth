@@ -23,7 +23,7 @@
 							Winf = unique(RawGSA8_phylo$Winf_std))
 
 
-	k_Winf_INT <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/K_WINF_INT.stan"),
+	k_Winf_INT <- stan(file = here("./stan models/K_WINF_INT.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -100,7 +100,7 @@
 							Winf = unique(RawGSA8_phylo$Winf_std))
 
 
-	k_Winf_slope <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/K_WINF_SLOPE.stan"),
+	k_Winf_slope <- stan(file = here("./stan models/K_WINF_SLOPE.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -182,7 +182,7 @@
 							d_mat = d_mat,
 							vcov_mat = vcov_mat)
 
-	k_Winf_INT_PHYLO <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/phylo/K_WINF_INT_PHYLO.stan"),
+	k_Winf_INT_PHYLO <- stan(file = here("./stan models/K_WINF_INT_PHYLO.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -239,7 +239,7 @@
 							d_mat = d_mat,
 							vcov_mat = vcov_mat)
 	
-	k_Winf_slope_PHYLO <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/phylo/K_WINF_SLOPE_PHYLO.stan"),
+	k_Winf_slope_PHYLO <- stan(file = here("./stan models/K_WINF_SLOPE_PHYLO.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -299,7 +299,7 @@
 							Winf = unique(RawGSA8_phylo_no_ac$Winf_std))
 	
 	
-	k_Winf_INT_no_ac <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/K_WINF_INT.stan"),
+	k_Winf_INT_no_ac <- stan(file = here("./stan models/K_WINF_INT.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -353,7 +353,7 @@
 							Winf = unique(RawGSA8_phylo_no_ac$Winf_std))
 	
 	
-	k_Winf_slope_no_ac <- stan(file = ("./analyses/manuscript code/stan models_NOV192020/non phylo/K_WINF_SLOPE.stan"),
+	k_Winf_slope_no_ac <- stan(file = ("./stan models/K_WINF_SLOPE.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -412,7 +412,7 @@
 							Winf = unique(RawGSA8_phylo_no_abr$Winf_std))
 	
 	
-	k_Winf_INT_no_abr <- stan(file = ("./analyses/manuscript code/stan models_NOV192020/non phylo/K_WINF_INT.stan"),
+	k_Winf_INT_no_abr <- stan(file = ("./stan models/K_WINF_INT.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -466,7 +466,7 @@
 							Winf = unique(RawGSA8_phylo_no_abr$Winf_std))
 	
 	
-	k_Winf_slope_no_abr <- stan(file = ("./analyses/manuscript code/stan models_NOV192020/non phylo/K_WINF_SLOPE.stan"),
+	k_Winf_slope_no_abr <- stan(file = ("./stan models/K_WINF_SLOPE.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
