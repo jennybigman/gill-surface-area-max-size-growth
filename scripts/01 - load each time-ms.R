@@ -50,7 +50,7 @@
 	}
 	
 	# load gill surface area & growth data for 132 species
-	GSA_growth_dat <- read.csv(here("data/gill surface area data/GSA_Growth_132SP_FINAL.csv"),
+	GSA_growth_dat <- read.csv(here("data/GSA_Growth_132SP_FINAL.csv"),
                              header = TRUE, stringsAsFactors = FALSE, strip.white = TRUE)  %>%
                   	dplyr::select(., -X, -X.1, -X.2)
 
@@ -105,7 +105,7 @@
 	len(RawGSA8$Binomial)
 	
 	# load phylogeny
-	fish_elasmo_supertree <- read.tree(file = here("./trees/fish_elasmo_supertree.tre"))
+	fish_elasmo_supertree <- read.tree(file = here("./data/fish_elasmo_supertree.tre"))
 	len(fish_elasmo_supertree$tip.label)
 	# 125 species, missing 7 teleost species from the phylogeny (that's ok, just have to exclude them from )
 
@@ -166,7 +166,7 @@
 	                       "Zoarces viviparus")
 	
 	### Pauly's data
-	Pauly_dat <- read.csv(here("data/pauly data/Pauly_GAI_data.csv"), header = TRUE,
+	Pauly_dat <- read.csv(here("data/Pauly_GAI_data.csv"), header = TRUE,
 	                      strip.white = TRUE, stringsAsFactors = FALSE) %>% na.omit()
 	
 	Pauly_dat$LogGAI <- log10(Pauly_dat$GAI)

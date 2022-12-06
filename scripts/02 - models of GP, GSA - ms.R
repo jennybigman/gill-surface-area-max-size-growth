@@ -19,7 +19,7 @@
 							GP_int = unique(RawGSA8_phylo$mean_gperf_simple))
 
 
-	MLM_GP_int_std <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/correct_MLM_GP_INT_STD.stan"),
+	MLM_GP_int_std <- stan(file = here("./stan models/correct_MLM_GP_INT_STD.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -70,7 +70,7 @@
 							GP_slope = unique(RawGSA8_phylo$mean_gperf_simple))
 
 
-	MLM_GP_slope_std <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/correct_MLM_GP_slope_STD.stan"),
+	MLM_GP_slope_std <- stan(file = here("./stan models/correct_MLM_GP_slope_STD.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -135,7 +135,7 @@
 	
 	
 	MLM_GP_int_phylo_std <- stan(
-	                file = ("./analyses/manuscript code/stan models_NOV192020/phylo/correct_MLM_stan_phylo_GP_int_STD.stan"),
+	                file = ("./stan models/correct_MLM_stan_phylo_GP_int_STD.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 1000,
@@ -193,7 +193,7 @@
 							vcov_mat = vcov_mat)
 	
 	MLM_GP_slope_phylo_std <- stan(
-	                file = here("./analyses/manuscript code/stan models_NOV192020/phylo/correct_MLM_stan_phylo_GP_slope_std.stan"),
+	                file = here("./stna models/correct_MLM_stan_phylo_GP_slope_std.stan"),
 	                data = dat,
 	                iter = 5000,
 	                warmup = 1000,
@@ -237,6 +237,9 @@
 
 	#### without aquaculture species ####
 	
+	RawGSA8_phylo_no_ac <- RawGSA8_phylo %>%
+		filter(Binomial %notin% aquaculture_sp_mean)
+	
 	#### intercept model ####
 
 	RawGSA8_phylo_no_ac$id = as.numeric(factor(RawGSA8_phylo_no_ac$Binomial))
@@ -252,7 +255,7 @@
 							GP_int = unique(RawGSA8_phylo_no_ac$mean_gperf_simple))
 	
 
-	GP_INT_NO_AC <- stan(file = "./analyses/manuscript code/without aquaculture species/MLM_GP_INT_EX.stan",
+	GP_INT_NO_AC <- stan(file = "./stan models/MLM_GP_INT_EX.stan",
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -305,7 +308,7 @@
 							GP_slope = unique(RawGSA8_phylo_no_ac$mean_gperf_simple))
 	
 	
-	GP_SLOPE_NO_AC <- stan(file = "./analyses/manuscript code/without aquaculture species/GP_SLOPE_NO_AC.stan",
+	MLM_GP_slope_std_ex <- stan(file = "./stan models/MLM_GP_SLOPE_EX.stan",
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -324,7 +327,7 @@
 	              		  				 "log_lik"))
 	
 	#save(GP_SLOPE_NO_AC, file = ("./analyses/manuscript code/without aquaculture species/GP_SLOPE_NO_AC.rds"))
-	#load(file = ("./analyses/manuscript code/without aquaculture species/GP_SLOPE_NO_AC.rds"))
+	#load(file = ("./stan models/MLM_GP_SLOPE_EX.rds"))
 	
 	
 	post_GP_SLOPE_NO_AC <- as.data.frame(MLM_GP_slope_std_ex)
@@ -360,7 +363,7 @@
 							GP_int = unique(RawGSA8_phylo_no_abr$mean_gperf_simple))
 	
 	
-	GP_INT_NO_ABR <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/correct_MLM_GP_INT_STD.stan"),
+	GP_INT_NO_ABR <- stan(file = here("./stan models/correct_MLM_GP_INT_STD.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
@@ -410,7 +413,7 @@
 							GP_slope = unique(RawGSA8_phylo_no_abr$mean_gperf_simple))
 	
 	
-	GP_SLOPE_NO_ABR <- stan(file = here("./analyses/manuscript code/stan models_NOV192020/non phylo/correct_MLM_GP_slope_STD.stan"),
+	GP_SLOPE_NO_ABR <- stan(file = here("./stan models/correct_MLM_GP_slope_STD.stan"),
 	              		  data = dat,
 	              		  iter = 5000,
 	              		  warmup = 1000,
