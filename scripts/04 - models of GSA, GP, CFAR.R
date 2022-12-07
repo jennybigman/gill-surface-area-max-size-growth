@@ -98,8 +98,9 @@
 	              		  			"sigma_GP",
 	              		  			"log_lik"))
 
-	save(GP_CFAR_int_std, file = here("./output/GP_CFAR_int_std.rds"))
-	load(file = here("./output/GP_CFAR_int_std.rds"))
+	#save(GP_CFAR_int_std, file = here("./output/GP_CFAR_int_std.rds"))
+	#load(file = here("./output/GP_CFAR_int_std.rds"))
+	
 	post_GP_CFAR_int_std <- as.data.frame(GP_CFAR_int_std)
 	post_GP_CFAR_int_std_mean <- stack(apply(post_GP_CFAR_int_std, 2, mean))
 	post_GP_CFAR_int_std_sd <- stack(apply(post_GP_CFAR_int_std, 2, sd))
@@ -155,9 +156,9 @@
 	              		  			"sigma_GP",
 	              		  			"log_lik"))
 	
-	save(GP_CFAR_slope_std, file = ("./output/GP_CFAR_slope_std.rds"))
-
-	load(file = here("./output/GP_CFAR_slope_std.rds")) 
+	#save(GP_CFAR_slope_std, file = ("./output/GP_CFAR_slope_std.rds"))
+	#load(file = here("./output/GP_CFAR_slope_std.rds")) 
+	
 	post_GP_CFAR_slope_std <- as.data.frame(GP_CFAR_slope_std)
 	post_GP_CFAR_slope_std_mean <- stack(apply(post_GP_CFAR_slope_std, 2, mean))
 	post_GP_CFAR_slope_std_sd <- stack(apply(post_GP_CFAR_slope_std, 2, sd))
@@ -243,8 +244,9 @@
 	              		  			"log_lik",
 	                					"lambda_GP"))
 
-	save(GP_CFAR_int_std_phylo, file = here("./output/GP_CFAR_int_std_phylo.rds"))
-	load(file = here("./output/GP_CFAR_int_std_phylo.rds"))
+	#save(GP_CFAR_int_std_phylo, file = here("./output/GP_CFAR_int_std_phylo.rds"))
+	#load(file = here("./output/GP_CFAR_int_std_phylo.rds"))
+	
 	post_GP_CFAR_int_std_phylo <- as.data.frame(GP_CFAR_int_std_phylo)
 	post_GP_CFAR_int_std_phylo_mean <- stack(apply(post_GP_CFAR_int_std_phylo, 2, mean))
 	post_GP_CFAR_int_std_phylo_sd <- stack(apply(post_GP_CFAR_int_std_phylo, 2, sd))
@@ -296,8 +298,9 @@
 	                					"lambda_GP",
 	              		  			"log_lik"))
 	
-	save(GP_CFAR_slope_std_phylo, file = ("./output/GP_CFAR_slope_std_phylo.rds"))
-	load(file = here("./output/GP_CFAR_slope_std_phylo.rds")) 
+	#save(GP_CFAR_slope_std_phylo, file = ("./output/GP_CFAR_slope_std_phylo.rds"))
+	#load(file = here("./output/GP_CFAR_slope_std_phylo.rds")) 
+	
 	post_GP_CFAR_slope_std_phylo <- as.data.frame(GP_CFAR_slope_std_phylo)
 	post_GP_CFAR_slope_std_phylo_mean <- stack(apply(post_GP_CFAR_slope_std_phylo, 2, mean))
 	post_GP_CFAR_slope_std_phylo_sd <- stack(apply(post_GP_CFAR_slope_std_phylo, 2, sd))
@@ -352,8 +355,9 @@
 	              		  			"sigma_GP",
 	              		  			"log_lik"))
 	
-	save(GP_CFAR_int_std_ex, file = ("./analyses/manuscript code/without aquaculture species/GP_CFAR_int_std_ex.rds"))
-	load(file = here("./analyses/manuscript code/without aquaculture species/GP_CFAR_int_std_ex.rds"))
+	#save(GP_CFAR_int_std_ex, file = ("./outputs/GP_CFAR_int_std_ex.rds"))
+	#load(file = here("./output/GP_CFAR_int_std_ex.rds"))
+	
 	post_GP_CFAR_int_std_no_ac <- as.data.frame(GP_CFAR_int_std_ex)
 	post_GP_CFAR_int_std_no_ac_mean <- stack(apply(post_GP_CFAR_int_std_no_ac, 2, mean))
 	post_GP_CFAR_int_std_no_ac_sd <- stack(apply(post_GP_CFAR_int_std_no_ac, 2, sd))
@@ -403,8 +407,9 @@
 	              		  			"sigma_GP",
 	              		  			"log_lik"))
 	
-	save(GP_CFAR_slope_std_ex, file = ("./analyses/manuscript code/without aquaculture species/GP_CFAR_slope_std_ex.rds"))
-	load(file = here("./analyses/manuscript code/without aquaculture species/GP_CFAR_slope_std_ex.rds"))
+	#save(GP_CFAR_slope_std_ex, file = ("./output/GP_CFAR_slope_std_ex.rds"))
+	#load(file = here("./output/GP_CFAR_slope_std_ex.rds"))
+	
 	post_GP_CFAR_slope_std_no_ac <- as.data.frame(GP_CFAR_slope_std_ex)
 	post_GP_CFAR_slope_std_no_ac_mean <- stack(apply(post_GP_CFAR_slope_std_no_ac, 2, mean))
 	post_GP_CFAR_slope_std_no_ac_sd <- stack(apply(post_GP_CFAR_slope_std_no_ac, 2, sd))
@@ -459,8 +464,9 @@
 	              		  			"sigma_GP",
 	              		  			"log_lik"))
 
-	save(GP_CFAR_int_std_no_abr, file = ("./output/GP_CFAR_int_std_no_abr.rds"))
-	load(file = here("./output/GP_CFAR_int_std_no_abr.rds"))
+	#save(GP_CFAR_int_std_no_abr, file = ("./output/GP_CFAR_int_std_no_abr.rds"))
+	#load(file = here("./output/GP_CFAR_int_std_no_abr.rds"))
+	
 	post_GP_CFAR_int_std_no_abr <- as.data.frame(GP_CFAR_int_std_no_abr)
 	post_GP_CFAR_int_std_no_abr_mean <- stack(apply(post_GP_CFAR_int_std_no_abr, 2, mean))
 	post_GP_CFAR_int_std_no_abr_sd <- stack(apply(post_GP_CFAR_int_std_no_abr, 2, sd))
@@ -508,8 +514,9 @@
 	              		  			"sigma_GP",
 	              		  			"log_lik"))
 
-	save(GP_CFAR_slope_std_no_abr, file = ("./output/GP_CFAR_slope_std_no_abr.rds"))
-	load(file = here("./output/GP_CFAR_slope_std_no_abr.rds"))
+	#save(GP_CFAR_slope_std_no_abr, file = ("./output/GP_CFAR_slope_std_no_abr.rds"))
+	#load(file = here("./output/GP_CFAR_slope_std_no_abr.rds"))
+	
 	post_GP_CFAR_slope_std_no_abr <- as.data.frame(GP_CFAR_slope_std_no_abr)
 	post_GP_CFAR_slope_std_no_abr_mean <- stack(apply(post_GP_CFAR_slope_std_no_abr, 2, mean))
 	post_GP_CFAR_slope_std_no_abr_sd <- stack(apply(post_GP_CFAR_slope_std_no_abr, 2, sd))

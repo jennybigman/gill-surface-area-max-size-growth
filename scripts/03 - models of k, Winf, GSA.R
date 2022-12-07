@@ -318,9 +318,8 @@
 	              		  				 "beta_ints_std",
 	              		  				 "log_lik"))
 	
-	save(k_Winf_INT_no_ac, file = ("./output/k_Winf_INT_no_ac.rds"))
-	
-	load(file = here("./output/k_Winf_INT_no_ac.rds"))
+	#save(k_Winf_INT_no_ac, file = ("./output/k_Winf_INT_no_ac.rds"))
+	#load(file = here("./output/k_Winf_INT_no_ac.rds"))
 	
 	post_k_Winf_INT_no_ac <- as.data.frame(k_Winf_INT_no_ac)
 	
@@ -372,9 +371,8 @@
 	              		  				 "beta_slopes_std",
 	              		  				 "log_lik"))
 	
-	save(k_Winf_slope_no_ac, file = ("./output/k_Winf_slope_no_ac.rds"))
-	
-	load(file = here("./output/k_Winf_slope_no_ac.rds"))
+	#save(k_Winf_slope_no_ac, file = ("./output/k_Winf_slope_no_ac.rds"))
+	#load(file = here("./output/k_Winf_slope_no_ac.rds"))
 			 
 	post_k_Winf_slope_no_ac <- as.data.frame(k_Winf_slope_no_ac)
 	
@@ -431,9 +429,8 @@
 	              		  				 "beta_ints_std",
 	              		  				 "log_lik"))
 	
-	save(k_Winf_INT_no_abr, file = ("./output/k_Winf_INT_no_abr.rds"))
-	
-	load(file = here("./output/k_Winf_INT_no_abr.rds"))
+	#save(k_Winf_INT_no_abr, file = ("./output/k_Winf_INT_no_abr.rds"))
+	#load(file = here("./output/k_Winf_INT_no_abr.rds"))
 	
 	post_k_Winf_INT_no_abr <- as.data.frame(k_Winf_INT_no_abr)
 	
@@ -485,9 +482,8 @@
 	              		  				 "beta_slopes_std",
 	              		  				 "log_lik"))
 	
-	save(k_Winf_slope_no_abr, file = ("./output/k_Winf_slope_no_abr.rds"))
-	
-	load(file = here("./output/k_Winf_slope_no_abr.rds"))
+	#save(k_Winf_slope_no_abr, file = ("./output/k_Winf_slope_no_abr.rds"))
+	#load(file = here("./output/k_Winf_slope_no_abr.rds"))
 			 
 	post_k_Winf_slope_no_abr <- as.data.frame(k_Winf_slope_no_abr)
 	
