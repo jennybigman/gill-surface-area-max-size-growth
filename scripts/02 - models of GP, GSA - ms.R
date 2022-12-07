@@ -1,7 +1,5 @@
 # 05a - models of GP ~ intercept or slope of GSA allometry
 
-	
-
 	## without phylo ##
 	
 	# GP ~ intercept #
@@ -88,8 +86,8 @@
 	              		  				 "sigma_GP_slope",
 	              		  				 "log_lik"))
 
-	save(MLM_GP_slope_std, file = here("./output/MLM_GP_slope_std.rds"))
-	load(file = here("./output/MLM_GP_slope_std.rds"))
+	#save(MLM_GP_slope_std, file = here("./output/MLM_GP_slope_std.rds"))
+	#load(file = here("./output/MLM_GP_slope_std.rds"))
 
 	post_MLM_GP_slope_std <- as.data.frame(MLM_GP_slope_std)
 	names_post_MLM_GP_slope_std <- names(post_MLM_GP_slope_std)
@@ -382,8 +380,8 @@
 	              		  				 "log_lik"))
 	
 	
-	#save(GP_INT_NO_ABR, file = ("./analyses/manuscript code/without aquaculture species/GP_INT_NO_ABR.rds"))
-	#load(file = ("./analyses/manuscript code/without aquaculture species/GP_INT_NO_ABR.rds"))
+	#save(GP_INT_NO_ABR, file = ("./output/GP_INT_NO_ABR.rds"))
+	#load(file = ("./output/GP_INT_NO_ABR.rds"))
 
 		post_GP_INT_NO_ABR <- as.data.frame(GP_INT_NO_ABR)
 	

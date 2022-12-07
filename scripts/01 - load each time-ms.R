@@ -11,28 +11,23 @@
 	library(dplyr)
 	library(forcats)
 	library(forestmangr)
-	#library(geiger)
 	library(ggeffects)
 	library(ggplot2)
 	library(here)
 	library(lme4)
-#	library(lmodel2)
 	library(loo)
 	library(magick)
 	library(MASS)
-	#library(MCMCglmm)
 	library(patchwork)
 	library(phangorn)
 	library(phytools)
 	library(purrr)
 	library(readr)
 	library(reshape2)
-#	library(rfishbase)
 	library(rstan)
 	library(stringr)
 	library(tidyr)
 	library(tidyverse)
-#	library(ggdist)
 	library(quantreg)
 	
   
@@ -105,9 +100,9 @@
 	len(RawGSA8$Binomial)
 	
 	# load phylogeny
-	fish_elasmo_supertree <- read.tree(file = here("./data/fish_elasmo_supertree.tre"))
+	fish_elasmo_supertree <- read.tree(file = here("./data/fish_elasmo_supertree.tre 2"))
+
 	len(fish_elasmo_supertree$tip.label)
-	# 125 species, missing 7 teleost species from the phylogeny (that's ok, just have to exclude them from )
 
 	# which species are on the tree?
 	Species <- lapply(strsplit(as.character(RawGSA8$Binomial), "\\ "), "[", 2)
