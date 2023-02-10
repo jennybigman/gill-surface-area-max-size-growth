@@ -100,7 +100,7 @@
 	len(RawGSA8$Binomial)
 	
 	# load phylogeny
-	fish_elasmo_supertree <- read.tree(file = here("./data/fish_elasmo_supertree.tre 2"))
+	fish_elasmo_supertree <- read.tree(file = here("./data/fish_elasmo_supertree.tre"))
 
 	len(fish_elasmo_supertree$tip.label)
 
